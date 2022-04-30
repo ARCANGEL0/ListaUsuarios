@@ -1,0 +1,97 @@
+.container {
+  margin-left: 32%;
+  margin-top: 4%;
+  height: 100% !important;
+}
+
+.containerTask {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.containerTask,
+.container-tarefa {
+  background-color: none;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #eee;
+  align-items: center;
+}
+
+
+.containerBotao {
+      margin-left: 30px;
+       margin-right: 30px;
+       width: '40%';
+       display: 'flex';
+}
+.container-add {
+  margin: 30px 30px;
+  width: 90%;
+  display: flex;
+}
+
+.input-add {
+  height: 8% !important;
+}
+input,
+input:focus,
+input:hover,
+input:active {
+  background: none !important;
+  border: 0 !important;
+  outline: none !important;
+  border-color: inherit !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.input {
+  padding: 0 10px;
+  border: none;
+  flex: 2;
+  color: cyan;
+  height: 2% !important;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+}
+
+.addInput:focus {
+  background-color: none;
+}
+
+.btn {
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-container {
+  margin: 0 10px;
+  flex: 1;
+}
+
+.buttonTask {
+  border-radius: 0.35rem;
+  background-color: transparent;
+  font-size: 24px;
+  color: cyan;
+}
+
+.buttonTask:hover {
+  color: aqua;
+  border-color: aqua;
+}
+
+
+.mainHeader{
+  margin-left: 35%;
+}

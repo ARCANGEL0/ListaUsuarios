@@ -1,0 +1,67 @@
+{
+  "name": "electron-react-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@arwes/animation": "^1.0.0-alpha.19",
+    "@arwes/core": "^1.0.0-alpha.19",
+    "@arwes/design": "^1.0.0-alpha.19",
+    "@arwes/sounds": "^1.0.0-alpha.19",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.27.2",
+    "electron-builder": "^22.11.7",
+    "electron-is-dev": "^2.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "uuid": "^8.3.2",
+    "web-vitals": "^1.1.2"
+  },
+  "homepage": "./",
+  "main": "public/electron.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "ebuild": "npm run build && node_modules/.bin/build",
+    "electron-dev": "concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-package": "./node_modules/.bin/electron-builder -c.extraMetadata.main=build/electron.js",
+    "preelectron-package": "npm run build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "build": {
+    "appId": "com.reactlist.app",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "electron": "^18.2.0",
+    "electron-packager": "^15.5.1",
+    "wait-on": "^6.0.0"
+  }
+}
