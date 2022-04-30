@@ -15,12 +15,10 @@ para abrir o projeto no navegador
 
 ### `npm start`
 
-Ou para abrir como um programa com Electron
 
-### `npm run dev`  
+O arquivo .exe está [hospedado](https://drive.google.com/file/d/11YbsMhouTQdw-Ir9H4LzOLw4sB6aajkD/view?usp=sharing)  no meu google drive, pois tive problemas em fazer push com arquivos grandes com git lfs:
 
-O programa consta com arquivos executaveis para Linux e Windows
-na pasta [build](build)
+
 
 
 
