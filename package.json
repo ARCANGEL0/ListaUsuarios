@@ -1,5 +1,5 @@
 {
-  "name": "electron-react-demo",
+  "name": "listaUsuarios",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -28,6 +28,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "dev": "electron-packager . app --platform=win32 --arch=x64",
     "ebuild": "npm run build && node_modules/.bin/build",
     "electron-dev": "concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\"",
     "electron-package": "./node_modules/.bin/electron-builder -c.extraMetadata.main=build/electron.js",
